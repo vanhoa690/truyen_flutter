@@ -14,7 +14,7 @@ class Header extends StatelessWidget {
       children: [
         if (!Responsive.isDesktop(context))
           IconButton(
-            icon: Icon(Icons.menu),
+            icon: const Icon(Icons.menu),
             onPressed: () {},
           ),
         if (!Responsive.isMobile(context))
@@ -58,7 +58,7 @@ class ProfileCard extends StatelessWidget {
           if (!Responsive.isMobile(context))
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: defaultPadding / 2),
-              child: Text("Angelina Jolie"),
+              child: Text("Truyen Flutter"),
             ),
           const Icon(Icons.keyboard_arrow_down),
         ],
